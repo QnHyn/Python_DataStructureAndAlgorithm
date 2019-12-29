@@ -1,0 +1,11 @@
+[program: django-celery-beat]  ;配置beat启动进程
+command=python manage.py celery beat  -l INFO ;beat启动进程命令
+directory=E:\python数据结构与算法-路飞学院\Python 异步任务队列 Celery 使用\django_celery ;启动命令执行目录
+environment=PATH="E:\PY_ENV\py3-flask\Scripts" ;虚拟环境路径
+stdout_logfile=E:\python数据结构与算法-路飞学院\Python 异步任务队列 Celery 使用\django_celery\log\celery_beat.log ;输出日志
+stderr_logfile=E:\python数据结构与算法-路飞学院\Python 异步任务队列 Celery 使用\django_celery\log\celery_beat.log ;输出错误日志
+autostart=true ;自动启动
+autorestart=true    ;自动重启
+startsecs=10
+stopwatisecs=60
+priority=997 ;优先级
